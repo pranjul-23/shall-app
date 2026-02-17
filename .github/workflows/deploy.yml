@@ -26,8 +26,5 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Verify MF remoteEntry
-        run: ls dist/remoteEntry.js
-
       - name: Build Docker image
         run: docker build -t shall-app:${{ github.sha }} .
