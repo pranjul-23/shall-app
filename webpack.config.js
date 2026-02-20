@@ -41,8 +41,8 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "container",
       remotes: {
-        app1: "app1@http://localhost:3001/remoteEntry.js",
-        app2: "app2@http://localhost:3002/remoteEntry.js",
+        app1: "app1@http://13.126.62.156:3001/remoteEntry.js",
+        app2: "app2@http://13.126.62.156:3002/remoteEntry.js",
       },
       shared: {
         react: { singleton: true, eager: true },
